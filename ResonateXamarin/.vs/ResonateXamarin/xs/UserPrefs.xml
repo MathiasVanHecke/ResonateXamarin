@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{102C84CF-D84E-4010-A88C-04476D642F83}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Zit- en statijd Tracker/project2/project2/View/LoginPage.xaml">
+    <Files>
+      <File FileName="ResonateXamarin/Views/LoginPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="../../Test/Test/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="../../Test/Test/LoginPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="../../Test/Test/LoginPage.xaml" Line="6" Column="1" />
+      <File FileName="../../Test/Test/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="ResonateXamarin/Views/LoginPage.xaml" Line="6" Column="1" />
+      <File FileName="../../Zit- en statijd Tracker/project2/project2/View/LoginPage.xaml" Line="81" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+</Properties>
