@@ -10,3 +10,5 @@
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/ResonateXamarin.dll
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/ResonateXamarin.pdb
+/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/ResonateXamarin.csprojAssemblyReference.cache
+/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/Views/RegisterPage.xaml.g.cs

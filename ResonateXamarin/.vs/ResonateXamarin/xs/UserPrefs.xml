@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{102C84CF-D84E-4010-A88C-04476D642F83}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Zit- en statijd Tracker/project2/project2/View/LoginPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ResonateXamarin/Views/RegisterPage.xaml">
     <Files>
-      <File FileName="ResonateXamarin/Views/LoginPage.xaml.cs" Line="18" Column="1" />
-      <File FileName="../../Zit- en statijd Tracker/project2/project2/View/LoginPage.xaml.cs" Line="51" Column="48" />
+      <File FileName="ResonateXamarin/Views/RegisterPage.xaml.cs" Line="55" Column="1" />
+      <File FileName="ResonateXamarin/Views/LoginSpotifyPage.xaml.cs" Line="15" Column="222" />
+      <File FileName="ResonateXamarin/Models/SpotifyUser.cs" Line="13" Column="45" />
+      <File FileName="ResonateXamarin/Models/ResonateManager.cs" Line="49" Column="1" />
+      <File FileName="ResonateXamarin/Models/SpotifyData.cs" Line="22" Column="31" />
+      <File FileName="ResonateXamarin/Views/RegisterPage.xaml" Line="4" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/Models/ResonateManager.cs" relfile="ResonateXamarin/Models/ResonateManager.cs" line="53" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Nexus_5X_API_28_x86" />

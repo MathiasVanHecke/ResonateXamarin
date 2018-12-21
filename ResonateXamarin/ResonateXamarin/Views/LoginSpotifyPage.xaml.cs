@@ -8,10 +8,11 @@ namespace ResonateXamarin.Views
 {
     public partial class LoginSpotifyPage : ContentPage
     {
+       
         public LoginSpotifyPage()
         {
             InitializeComponent();
-            Browser.Source = "https://accounts.spotify.com/authorize?client_id=7a788b5554324e06afd076e05e69eaee&redirect_uri=https%3A%2F%2Fexample.com%2Fcallback&scope=user-read-private%20user-read-email&response_type=token";
+            Browser.Source = "https://accounts.spotify.com/authorize?client_id=7a788b5554324e06afd076e05e69eaee&redirect_uri=https%3A%2F%2Fexample.com%2Fcallback&scope=user-read-private%20user-read-email%20user-top-read%20user-read-birthdate&response_type=token";
         }
 
         void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
@@ -22,7 +23,7 @@ namespace ResonateXamarin.Views
                 string helper = url.Split('=')[1];
                 string token = helper.Split('&')[0];
                 GlobalVariables.UserBearer = token;
-                Debug.WriteLine(GlobalVariables.UserBearer);
+                Application.Current.MainPage = new RegisterPage();
             }
         }
     }

@@ -3,6 +3,7 @@
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/android/assets/Java.Interop.dll
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/android/assets/Mono.Android.dll
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/android/assets/mscorlib.dll
+/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/android/assets/ResonateXamarin.dll
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/android/assets/System.Core.dll
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/android/assets/System.dll
