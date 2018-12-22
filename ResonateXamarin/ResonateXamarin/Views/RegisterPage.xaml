@@ -38,66 +38,25 @@
                         <ColumnDefinition Width="65" />
                         <ColumnDefinition Width="4" />
                         <ColumnDefinition Width="*" />
-                        <!--                    <ColumnDefinition Width="50" />-->
+                        <!--  <ColumnDefinition Width="50" />-->
                     </Grid.ColumnDefinitions>
                 </Grid>
                 <!--Genres-->
-                <Label Text="Genre tags" VerticalOptions="Start" TextColor="#63d297" FontSize="25" HorizontalOptions="FillAndExpand" />
-                <StackLayout Orientation="Vertical" >
-                    <Grid ColumnSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="4"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <BoxView BackgroundColor="#1e9b6c"/>
-                        <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1"/>
-                    </Grid>
-                          <Grid ColumnSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="4"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <BoxView BackgroundColor="#1e9b6c"/>
-                        <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1"/>
-                    </Grid>
-                          <Grid ColumnSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="4"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <BoxView BackgroundColor="#1e9b6c"/>
-                        <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1"/>
-                    </Grid>
-                          <Grid ColumnSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="4"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <BoxView BackgroundColor="#1e9b6c"/>
-                        <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1"/>
-                    </Grid>
-                          <Grid ColumnSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="4"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <BoxView BackgroundColor="#1e9b6c"/>
-                        <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1"/>
-                    </Grid>
-                          <Grid ColumnSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="4"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <BoxView BackgroundColor="#1e9b6c"/>
-                        <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1"/>
-                    </Grid>
+                <Label Text="Genre tags" TextColor="#63d297" FontSize="25" HorizontalOptions="StartAndExpand" />
+                <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                    <StackLayout>
+                        <Grid x:Name="gGenres" ColumnSpacing="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <!--   <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="0" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" FontSize="15" />
+                            <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" FontSize="15" />
+                            <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"  FontSize="15" />
+                            <Label Text="Rock and Roll" BackgroundColor="#3f4648" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"  FontSize="15" />-->
+                        </Grid>
+                        <Button x:Name="btnRegister" Text="Register" TextColor="#FFFFFF" FontSize="Medium" BackgroundColor="#1DB954" Clicked="Handle_Clicked" BorderRadius="25" Margin="40"/>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

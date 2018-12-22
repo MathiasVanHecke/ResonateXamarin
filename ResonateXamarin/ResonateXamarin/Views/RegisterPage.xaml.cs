@@ -9,6 +9,7 @@ namespace ResonateXamarin.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPage : ContentPage
     {
+        public SpotifyData spotifyData = new SpotifyData();
         public RegisterPage()
         {
             InitializeComponent();
@@ -27,8 +28,43 @@ namespace ResonateXamarin.Views
 
         private async void GetUserDataFromSpotify()
         {
-            SpotifyData spotifyData = await ResonateManager.GetSpotifyUserDataAsync();
-          
+            spotifyData = await ResonateManager.GetSpotifyUserDataAsync();
+
+            dataArtists();
+            dataGenres();
+        }
+
+        private void dataGenres()
+        {
+            int index = 0;
+            int column = 0;
+            for (int i = 0; i < spotifyData.items.Count; i++)
+            {
+                foreach (String genre in spotifyData.items[i].genres)
+                {
+                    gGenres.Children.Add(new Label
+                    {
+                        Text = genre,
+                        TextColor = Color.FromHex("#FFFFFF"),
+                        FontSize = 18,
+                        BackgroundColor = Color.FromHex("#3f4648"),
+                        HorizontalTextAlignment = TextAlignment.Center,
+                        HorizontalOptions = LayoutOptions.FillAndExpand
+                    },column,index);
+
+                    if (column == 0)
+                        column = 1;
+                    else
+                    {
+                        column = 0;
+                        index++;
+                    }
+                }
+            }
+        }
+
+        private void dataArtists()
+        {
             for (int i = 0; i < spotifyData.items.Count; i++)
             {
                 gArtists.Children.Add(new Image
@@ -55,9 +91,16 @@ namespace ResonateXamarin.Views
                 //gArtists.Children.Add(new Image
                 //{
                 //    Source = ImageSource.FromResource("ResonateXamarin.Assets.Close.png"),
-                //    VerticalOptions = LayoutOptions.CenterAndExpand
+                //    VerticalOptions = LayoutOptions.CenterAndExpand,
+
+
                 //}, 3, i);
             }
+        }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
