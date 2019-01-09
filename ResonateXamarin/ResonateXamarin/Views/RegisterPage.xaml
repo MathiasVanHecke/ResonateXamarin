@@ -21,15 +21,15 @@
                     <!--Naam-->
                     <BoxView Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1e9b6c" />
                     <Label Grid.Column="1" VerticalTextAlignment="Center" BackgroundColor="#1e9b6c" FontSize="15" TextColor="#FFF">NAME</Label>
-                    <Label x:Name="lblName" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Mathias Van Hecke" BackgroundColor="#3f4648" TextColor="#FFF" FontSize="17" HorizontalOptions="FillAndExpand" />
+                    <Entry x:Name="entName" Grid.Row="0" Grid.Column="2"  HorizontalTextAlignment="Center" Text="Name" BackgroundColor="#3f4648" TextColor="#FFF" FontSize="17" HorizontalOptions="FillAndExpand" />
                     <!--Email-->
                     <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1e9b6c" />
                     <Label Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" BackgroundColor="#1e9b6c" FontSize="15" TextColor="#FFF">EMAIL</Label>
-                    <Label x:Name="lblEmail" Grid.Row="1" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="mathias.vanhecke@icloud.com" BackgroundColor="#3f4648" TextColor="#FFF" FontSize="17" HorizontalOptions="FillAndExpand" />
+                    <Entry x:Name="entEmail" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Text="Email" BackgroundColor="#3f4648" TextColor="#FFF" FontSize="17" HorizontalOptions="FillAndExpand" />
                     <!--DOF-->
                     <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1e9b6c" />
                     <Label Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center" BackgroundColor="#1e9b6c" FontSize="15" TextColor="#FFF">DOB</Label>
-                    <Label x:Name="lblDob" Grid.Row="2" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="05/04/1998" BackgroundColor="#3f4648" TextColor="#FFF" FontSize="17" HorizontalOptions="FillAndExpand" />
+                    <Entry x:Name="entDob" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Text="--/--/----" BackgroundColor="#3f4648" TextColor="#FFF" FontSize="17" HorizontalOptions="FillAndExpand" />
                 </Grid>
                 <!--Artists-->
                 <Label Text="Artists you like" VerticalOptions="Start" TextColor="#63d297" FontSize="25" HorizontalOptions="FillAndExpand" />

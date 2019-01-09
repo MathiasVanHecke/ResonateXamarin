@@ -10,6 +10,8 @@ namespace ResonateXamarin.Views
     public partial class RegisterPage : ContentPage
     {
         public SpotifyData spotifyData = new SpotifyData();
+        public SpotifyUser spotifyUser = new SpotifyUser();
+
         public RegisterPage()
         {
             InitializeComponent();
@@ -20,28 +22,34 @@ namespace ResonateXamarin.Views
 
         private async void GetUserFromSpotify()
         {
-            SpotifyUser spotifyUser = await ResonateManager.GetSpotifyUserAsync();
-            lblName.Text = spotifyUser.display_name;
-            lblEmail.Text = spotifyUser.email;
-            lblDob.Text = spotifyUser.birthdate;
+            spotifyUser = await ResonateManager.GetSpotifyUserAsync();
+            entName.Text = spotifyUser.display_name;
+            entEmail.Text = spotifyUser.email;
+            entDob.Text = spotifyUser.birthdate;
         }
 
         private async void GetUserDataFromSpotify()
         {
             spotifyData = await ResonateManager.GetSpotifyUserDataAsync();
 
-            dataArtists();
-            dataGenres();
+            LoadGenres();
+            LoadArtists();
         }
 
-        private void dataGenres()
+        private void LoadGenres()
         {
             int index = 0;
             int column = 0;
+
+            spotifyUser.Genres = new List<Genre>();
+
+            //Elke artiest heeft een genre
             for (int i = 0; i < spotifyData.items.Count; i++)
             {
+                //Voor elke genre in artiest
                 foreach (String genre in spotifyData.items[i].genres)
                 {
+                    if (genre == string.Empty) return;
                     gGenres.Children.Add(new Label
                     {
                         Text = genre,
@@ -50,21 +58,26 @@ namespace ResonateXamarin.Views
                         BackgroundColor = Color.FromHex("#3f4648"),
                         HorizontalTextAlignment = TextAlignment.Center,
                         HorizontalOptions = LayoutOptions.FillAndExpand
-                    },column,index);
+                    }, column, index);
 
                     if (column == 0)
                         column = 1;
                     else
                     {
+                        //Blijf horizontaal
                         column = 0;
                         index++;
                     }
+
+                    //Toevoegen aan User object
+                   spotifyUser.Genres.Add(new Genre() { UserId = spotifyUser.id, GenreName = genre });
                 }
             }
         }
 
-        private void dataArtists()
+        private void LoadArtists()
         {
+            spotifyUser.Artists = new List<Artist>();
             for (int i = 0; i < spotifyData.items.Count; i++)
             {
                 gArtists.Children.Add(new Image
@@ -88,19 +101,21 @@ namespace ResonateXamarin.Views
                     FontSize = 18
                 }, 2, i);
 
-                //gArtists.Children.Add(new Image
-                //{
-                //    Source = ImageSource.FromResource("ResonateXamarin.Assets.Close.png"),
-                //    VerticalOptions = LayoutOptions.CenterAndExpand,
-
-
-                //}, 3, i);
+                spotifyUser.Artists.Add(new Artist(){
+                 UserId = spotifyUser.id,
+                 ArtistName = spotifyData.items[i].name,UrlPf = spotifyData.items[i].images[0].url,
+                    HrefSpotify = spotifyData.items[i].href });
             }
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
+        async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            spotifyUser.display_name = entName.Text;
+            spotifyUser.email = entEmail.Text;
+            spotifyUser.birthdate = entDob.Text;
+
+            Boolean succes = await ResonateManager.RegisterUser(spotifyUser);
+            //List<String> data = await ResonateManager.GetGenres();
         }
     }
 }

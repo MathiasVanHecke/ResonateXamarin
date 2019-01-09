@@ -14,10 +14,27 @@ namespace ResonateXamarin.Models
         public List<Image> images { get; set; }
         public string uri { get; set; }
 
+        //Server ontvangt dit anders dan in het object
+        private string UrlPf;
+        public string urlPf
+        {
+            get
+            {
+                return this.images[0].url;
+            }
+            set
+            {
+                this.UrlPf = value;
+            }
+        }
+
         public class Image
         {
             public string url { get; set; }
         }
+
+        public virtual List<Artist> Artists { get; set; }
+        public virtual List<Genre> Genres { get; set; }
 
     }
 }

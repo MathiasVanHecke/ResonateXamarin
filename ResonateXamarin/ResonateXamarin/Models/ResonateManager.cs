@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -45,6 +46,46 @@ namespace ResonateXamarin.Models
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", GlobalVariables.UserBearer);
                     String result = await client.GetStringAsync(url);
                     SpotifyData data = JsonConvert.DeserializeObject<SpotifyData>(result);
+                    Debug.WriteLine(data);
+                    return data;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+        public static async Task<Boolean> RegisterUser(SpotifyUser user)
+        {
+            
+            using (HttpClient client = new HttpClient())
+            {
+                string url = "https://resonateapi.azurewebsites.net/api/user";
+                try
+                {
+                    string json = JsonConvert.SerializeObject(user);
+                    HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                    var response = await client.PostAsync(url, content);
+                    string result = await response.Content.ReadAsStringAsync();
+                    return Convert.ToBoolean(result);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+       public static async Task<List<String>> GetGenres()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string url = "https://resonateapi.azurewebsites.net/api/genre";
+                try
+                {
+                    String result = await client.GetStringAsync(url);
+                    List<String> data = JsonConvert.DeserializeObject<List<String>>(result);
                     Debug.WriteLine(data);
                     return data;
                 }
