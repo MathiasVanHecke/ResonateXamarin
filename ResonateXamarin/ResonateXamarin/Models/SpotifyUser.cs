@@ -20,7 +20,9 @@ namespace ResonateXamarin.Models
         {
             get
             {
-                return this.images[0].url;
+                return "https://scontent-bru2-1.xx.fbcdn.net/v/t31.0-8/19667789_10211328272659999_3127023050687871820_o.jpg?_nc_cat=102&_nc_ht=scontent-bru2-1.xx&oh=5cb7f7b3aefbf65a7fe3ff15ea5e0ed9&oe=5CBD3FB4";
+                //return this.images[0].url;
+                //TODO verander dit.
             }
             set
             {

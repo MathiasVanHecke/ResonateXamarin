@@ -103,8 +103,9 @@ namespace ResonateXamarin.Views
 
                 spotifyUser.Artists.Add(new Artist(){
                  UserId = spotifyUser.id,
-                 ArtistName = spotifyData.items[i].name,UrlPf = spotifyData.items[i].images[0].url,
-                    HrefSpotify = spotifyData.items[i].href });
+                 ArtistName = spotifyData.items[i].name,
+                 UrlPf = spotifyData.items[i].images[0].url,
+                 HrefSpotify = spotifyData.items[i].href });
             }
         }
 
@@ -114,8 +115,10 @@ namespace ResonateXamarin.Views
             spotifyUser.email = entEmail.Text;
             spotifyUser.birthdate = entDob.Text;
 
-            Boolean succes = await ResonateManager.RegisterUser(spotifyUser);
-            //List<String> data = await ResonateManager.GetGenres();
+            //Boolean succes = await ResonateManager.RegisterUser(spotifyUser);
+ 
+            Application.Current.MainPage = new DiscoverPeopleByArtistPage();
+
         }
     }
 }

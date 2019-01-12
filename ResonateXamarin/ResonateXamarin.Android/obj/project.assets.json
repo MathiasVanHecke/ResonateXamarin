@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "CardsView/1.6.8": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0"
+        },
+        "compile": {
+          "lib/MonoAndroid10/PanCardView.Droid.dll": {},
+          "lib/MonoAndroid10/PanCardView.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/PanCardView.Droid.dll": {},
+          "lib/MonoAndroid10/PanCardView.dll": {}
+        }
+      },
       "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
@@ -354,6 +368,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CardsView": "1.6.8",
           "Newtonsoft.Json": "12.0.1",
           "Xamarin.Forms": "3.3.0.967583"
         },
@@ -367,6 +382,27 @@
     }
   },
   "libraries": {
+    "CardsView/1.6.8": {
+      "sha512": "G2j98TUYEb6KPGASGFWHpIVYK0r/fcG6iwxBkVlMRVbSGlKipLaBB1/eLiyxWuoWz2obRzy5G4Jz4d1VY+x6yQ==",
+      "type": "package",
+      "path": "cardsview/1.6.8",
+      "files": [
+        ".signature.p7s",
+        "cardsview.1.6.8.nupkg.sha512",
+        "cardsview.nuspec",
+        "lib/MonoAndroid10/PanCardView.Droid.dll",
+        "lib/MonoAndroid10/PanCardView.dll",
+        "lib/Xamarin.Mac20/PanCardView.dll",
+        "lib/Xamarin.iOS10/PanCardView.dll",
+        "lib/Xamarin.iOS10/PanCardView.iOS.dll",
+        "lib/netstandard1.0/PanCardView.dll",
+        "lib/netstandard2.0/PanCardView.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/PanCardView.dll",
+        "lib/uap/PanCardView.dll",
+        "lib/win81/PanCardView.dll",
+        "lib/wpa81/PanCardView.dll"
+      ]
+    },
     "Newtonsoft.Json/12.0.1": {
       "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
       "type": "package",

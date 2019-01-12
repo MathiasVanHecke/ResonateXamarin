@@ -16,6 +16,8 @@ namespace ResonateXamarin.Views
         void btnLoginOn_Clicked(object sender, System.EventArgs e)
         {
             Application.Current.MainPage = new LoginSpotifyPage();
+
+            //Application.Current.MainPage = new RegisterPage();
         }
     }
 }

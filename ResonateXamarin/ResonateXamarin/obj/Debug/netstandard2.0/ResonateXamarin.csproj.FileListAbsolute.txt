@@ -12,3 +12,4 @@
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/ResonateXamarin.pdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/ResonateXamarin.csprojAssemblyReference.cache
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/Views/RegisterPage.xaml.g.cs
+/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/obj/Debug/netstandard2.0/Views/Discover/DiscoverPeopleByArtistPage.xaml.g.cs

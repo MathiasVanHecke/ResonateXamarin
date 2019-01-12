@@ -9,12 +9,9 @@ using Newtonsoft.Json;
 
 namespace ResonateXamarin.Models
 {
-    public class ResonateManager
+    public static class ResonateManager
     {
-        public ResonateManager()
-        {
-        }
-
+        #region Spotify Api
         public static async Task<SpotifyUser> GetSpotifyUserAsync()
         {
             using (HttpClient client = new HttpClient())
@@ -55,10 +52,12 @@ namespace ResonateXamarin.Models
                 }
             }
         }
+        #endregion
 
+        #region Resonate Api
         public static async Task<Boolean> RegisterUser(SpotifyUser user)
         {
-            
+
             using (HttpClient client = new HttpClient())
             {
                 string url = "https://resonateapi.azurewebsites.net/api/user";
@@ -77,7 +76,7 @@ namespace ResonateXamarin.Models
             }
         }
 
-       public static async Task<List<String>> GetGenres()
+        public static async Task<List<String>> GetGenres()
         {
             using (HttpClient client = new HttpClient())
             {
@@ -86,7 +85,6 @@ namespace ResonateXamarin.Models
                 {
                     String result = await client.GetStringAsync(url);
                     List<String> data = JsonConvert.DeserializeObject<List<String>>(result);
-                    Debug.WriteLine(data);
                     return data;
                 }
                 catch (Exception ex)
@@ -95,5 +93,23 @@ namespace ResonateXamarin.Models
                 }
             }
         }
+
+        public static async Task<List<Artist>> GetArists()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string url = "https://resonateapi.azurewebsites.net/api/artist";
+                try
+                {
+                    List<Artist> data = JsonConvert.DeserializeObject<List<Artist>>(await client.GetStringAsync(url));
+                    return data;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+        #endregion
     }
 }

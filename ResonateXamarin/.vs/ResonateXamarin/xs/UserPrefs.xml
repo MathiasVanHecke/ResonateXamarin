@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{102C84CF-D84E-4010-A88C-04476D642F83}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ResonateXamarin/Views/RegisterPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ResonateXamarin/CardsFactory/DefaultSwipeCardItemView.cs">
     <Files>
-      <File FileName="ResonateXamarin/Views/RegisterPage.xaml.cs" Line="119" Column="10" />
-      <File FileName="ResonateXamarin/Models/SpotifyData.cs" Line="1" Column="1" />
-      <File FileName="ResonateXamarin/Models/SpotifyUser.cs" Line="33" Column="44" />
+      <File FileName="ResonateXamarin/Views/Swipe/SwipePage.cs" Line="36" Column="36" />
+      <File FileName="ResonateXamarin/ViewModels/SwipePageViewModel.cs" Line="60" Column="20" />
+      <File FileName="ResonateXamarin/CardsFactory/DefaultSwipeCardItemView.cs" Line="41" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -12,5 +12,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.b1a5c594" />
 </Properties>

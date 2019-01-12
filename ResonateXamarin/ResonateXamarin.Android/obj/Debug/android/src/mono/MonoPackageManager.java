@@ -109,6 +109,8 @@ class MonoPackageManager_Resources {
 		"ResonateXamarin.Android.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"PanCardView.dll",
+		"PanCardView.Droid.dll",
 		"ResonateXamarin.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

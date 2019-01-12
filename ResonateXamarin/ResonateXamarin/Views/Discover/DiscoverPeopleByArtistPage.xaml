@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResonateXamarin.Views.DiscoverPeopleByArtistPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" x:Name="layout" Padding="20" BackgroundColor="#222729">
+                <!--Title-->
+                <Label Text="Discover People by" VerticalOptions="Start" TextColor="#63d297" FontSize="34" HorizontalOptions="FillAndExpand" />
+                
+                <Label Text="Artists" VerticalOptions="Start" TextColor="#63d297" FontSize="25" HorizontalOptions="FillAndExpand" FontAttributes="Bold" />
+                
+                <StackLayout>
+                        <Grid x:Name="gArtists" ColumnSpacing="10" RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            
+                        </Grid>
+                       
+                    </StackLayout>
+                
+               
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
