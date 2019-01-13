@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{102C84CF-D84E-4010-A88C-04476D642F83}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ResonateXamarin/CardsFactory/DefaultSwipeCardItemView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ResonateXamarin/Views/Swipe/SwipePage.cs">
     <Files>
-      <File FileName="ResonateXamarin/Views/Swipe/SwipePage.cs" Line="36" Column="36" />
-      <File FileName="ResonateXamarin/ViewModels/SwipePageViewModel.cs" Line="60" Column="20" />
-      <File FileName="ResonateXamarin/CardsFactory/DefaultSwipeCardItemView.cs" Line="41" Column="13" />
+      <File FileName="ResonateXamarin/Views/Swipe/SwipePage.cs" Line="64" Column="1" />
+      <File FileName="ResonateXamarin/ViewModels/SwipePageViewModel.cs" Line="46" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/Views/Swipe/SwipePage.cs" relfile="ResonateXamarin/Views/Swipe/SwipePage.cs" line="64" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.b1a5c594" />
+  <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Nexus_5X_API_28_x86" />
 </Properties>

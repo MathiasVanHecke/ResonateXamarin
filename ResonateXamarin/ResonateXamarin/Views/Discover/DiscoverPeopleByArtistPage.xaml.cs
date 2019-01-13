@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using ResonateXamarin.Models;
 using ResonateXamarin.Views.Swipe;
 using Xamarin.Forms;
@@ -14,10 +15,10 @@ namespace ResonateXamarin.Views
         public DiscoverPeopleByArtistPage()
         {
             InitializeComponent();
-            LoadArtist();
+            LoadArtist(); //TODO maak async 
         }
 
-        private async void LoadArtist()
+        async Task LoadArtist()
         {
             int column = 0;
 
@@ -34,9 +35,9 @@ namespace ResonateXamarin.Views
                 var tapGestureRecognizer = new TapGestureRecognizer();
                 image.GestureRecognizers.Add(tapGestureRecognizer);
 
-                tapGestureRecognizer.Tapped += (sender, e) =>
+                tapGestureRecognizer.Tapped += async (sender, e) =>
                 {
-                    Application.Current.MainPage = new SwipePage("artist", artist.ArtistName);
+                    Application.Current.MainPage = await SwipePage.BuidSwipePageAsnyc();
                 };
 
                 gArtists.Children.Add(image, column, 0);

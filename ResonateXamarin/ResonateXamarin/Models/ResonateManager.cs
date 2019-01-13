@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -102,6 +103,23 @@ namespace ResonateXamarin.Models
                 try
                 {
                     List<Artist> data = JsonConvert.DeserializeObject<List<Artist>>(await client.GetStringAsync(url));
+                    return data;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+        public static async Task<ObservableCollection<SpotifyUser>> GetPotMatches(String user, int matchLevel, String name)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string url = $"https://resonateapi.azurewebsites.net/api/match/{user}/{matchLevel}/{name}";
+                try
+                {
+                    ObservableCollection<SpotifyUser> data = JsonConvert.DeserializeObject<ObservableCollection<SpotifyUser>>(await client.GetStringAsync(url));
                     return data;
                 }
                 catch (Exception ex)

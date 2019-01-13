@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using PanCardView.Extensions;
 using ResonateXamarin.Models;
@@ -15,15 +16,9 @@ namespace ResonateXamarin.ViewModels
 
         private int _currentIndex;
 
-        public SwipePageViewModel()
+        public SwipePageViewModel(ObservableCollection<SpotifyUser> items)
         {
-
-            Items = new ObservableCollection<SpotifyUser>
-            {
-               new SpotifyUser() {display_name = "Mathias Van Hecke", birthdate = "05/04/1998"} ,
-               new SpotifyUser() {display_name = "Nico Clompen", birthdate = "05/04/1998"} ,
-               new SpotifyUser() {display_name = "Céine Abbeloos", birthdate = "05/04/1998"},
-            };
+            Items = items;
 
             ItemSwiped = new Command(v =>
             {
@@ -65,7 +60,7 @@ namespace ResonateXamarin.ViewModels
             }
         }
 
-        public ObservableCollection<SpotifyUser> Items { get; }
+        public ObservableCollection<SpotifyUser> Items { get;}
     }
 }
 

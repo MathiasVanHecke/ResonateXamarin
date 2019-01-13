@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using PanCardView;
 using ResonateXamarin.CardsFactory;
+using ResonateXamarin.Models;
 using ResonateXamarin.ViewModels;
 using Xamarin.Forms;
 
@@ -8,11 +11,12 @@ namespace ResonateXamarin.Views.Swipe
 {
     public class SwipePage : ContentPage
     {
-        public SwipePage(string methode, string value)
+       
+        public SwipePage(ObservableCollection<SpotifyUser> items)
         {
             //methode = Artist, Genre, Location
             //Value = waarde van methode
-            
+
 
             var cardsView = new CardsView
             {
@@ -30,12 +34,10 @@ namespace ResonateXamarin.Views.Swipe
 
             cardsView.SetBinding(CardsView.ItemSwipedCommandProperty, nameof(SwipePageViewModel.ItemSwiped));
 
-
-
             //Layout van swipe pagina
             Label title = new Label
             {
-                Text = $"Ontdek alle mensen die van: {value} houden.",
+                Text = $"Ontdek alle mensen die van: DYNAMISCH houden.",
                 FontSize = 34,
                 TextColor = Color.FromHex("#63d297")
             };
@@ -53,7 +55,13 @@ namespace ResonateXamarin.Views.Swipe
 
             Content.BackgroundColor = Color.FromHex("#222729");
 
-            BindingContext = new SwipePageViewModel();
+            BindingContext = new SwipePageViewModel(items);
+        }
+
+        async public static Task<SwipePage> BuidSwipePageAsnyc()
+        {
+            ObservableCollection<SpotifyUser> tmpData = await ResonateManager.GetPotMatches("koen.vanhecke", 1, "arctic monkeys");
+            return new SwipePage(tmpData);
         }
     }
 }
