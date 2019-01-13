@@ -15,10 +15,10 @@ namespace ResonateXamarin.Views
         public DiscoverPeopleByArtistPage()
         {
             InitializeComponent();
-            LoadArtist(); //TODO maak async 
+            LoadArtist();
         }
 
-        async Task LoadArtist()
+        private async void LoadArtist()
         {
             int column = 0;
 
@@ -37,7 +37,7 @@ namespace ResonateXamarin.Views
 
                 tapGestureRecognizer.Tapped += async (sender, e) =>
                 {
-                    Application.Current.MainPage = await SwipePage.BuidSwipePageAsnyc();
+                    Application.Current.MainPage = await SwipePage.BuildSwipePageAsnyc();
                 };
 
                 gArtists.Children.Add(image, column, 0);

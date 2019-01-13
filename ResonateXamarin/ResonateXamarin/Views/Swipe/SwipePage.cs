@@ -58,7 +58,7 @@ namespace ResonateXamarin.Views.Swipe
             BindingContext = new SwipePageViewModel(items);
         }
 
-        async public static Task<SwipePage> BuidSwipePageAsnyc()
+        async public static Task<SwipePage> BuildSwipePageAsnyc()
         {
             ObservableCollection<SpotifyUser> tmpData = await ResonateManager.GetPotMatches("koen.vanhecke", 1, "arctic monkeys");
             return new SwipePage(tmpData);

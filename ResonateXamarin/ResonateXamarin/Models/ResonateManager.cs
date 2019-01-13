@@ -58,7 +58,6 @@ namespace ResonateXamarin.Models
         #region Resonate Api
         public static async Task<Boolean> RegisterUser(SpotifyUser user)
         {
-
             using (HttpClient client = new HttpClient())
             {
                 string url = "https://resonateapi.azurewebsites.net/api/user";
@@ -121,6 +120,28 @@ namespace ResonateXamarin.Models
                 {
                     ObservableCollection<SpotifyUser> data = JsonConvert.DeserializeObject<ObservableCollection<SpotifyUser>>(await client.GetStringAsync(url));
                     return data;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+        public static async Task<Boolean> AddMatch(SpotifyUser user2)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                const string currentUser = "koen.vanhecke";
+
+                string url = $"https://resonateapi.azurewebsites.net/api/match/{currentUser}/{user2.id}";
+                try
+                {
+                    string json = JsonConvert.SerializeObject(user2);
+                    HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                    var response = await client.PostAsync(url, content);
+                    SpotifyUser user = JsonConvert.DeserializeObject<SpotifyUser>(await response.Content.ReadAsStringAsync());
+                    return true;
                 }
                 catch (Exception ex)
                 {

@@ -13,10 +13,28 @@ namespace ResonateXamarin.Models
         public string birthdate { get; set; }
 
         public string urlPf { get; set; }
- 
+
+        private string _nameAndAge;
+        public string nameAndAge
+        {
+            get
+            {
+                var today = DateTime.Today;
+            
+                var age = today.Year - Convert.ToDateTime(birthdate).Year;
+        
+                if (Convert.ToDateTime(birthdate) > today.AddYears(-age)) age--;
+                _nameAndAge = $"{display_name}, {age} ";
+                return _nameAndAge;
+            }
+        }
+
 
         public virtual List<Artist> Artists { get; set; }
         public virtual List<Genre> Genres { get; set; }
 
+
     }
+
+
 }

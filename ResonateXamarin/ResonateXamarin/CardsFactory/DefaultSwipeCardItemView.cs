@@ -1,4 +1,5 @@
 ﻿using System;
+using ResonateXamarin.Views.Swipe;
 using Xamarin.Forms;
 
 namespace ResonateXamarin.CardsFactory
@@ -8,7 +9,7 @@ namespace ResonateXamarin.CardsFactory
         public DefaultSwipeCardItemView()
         {
             var tapGesture = new TapGestureRecognizer();
-            tapGesture.Tapped += (s, e) => Application.Current.MainPage.DisplayAlert("Tap!", null, "Ok");
+            tapGesture.Tapped += async (s, e) => await Navigation.PushAsync(new ProfileSwipePage());
             //profiel id meegeven aan volgende applicatie
 
             GestureRecognizers.Add(tapGesture);
@@ -19,7 +20,6 @@ namespace ResonateXamarin.CardsFactory
                 HasShadow = false,
                 IsClippedToBounds = false,
                 BorderColor = Color.Silver,
-                BackgroundColor = Color.Red,
             };
 
             Label label = new Label
@@ -27,10 +27,10 @@ namespace ResonateXamarin.CardsFactory
                 Text = "Mathias, 18",
                 TextColor = Color.White,
                 FontSize = 26,
-                BackgroundColor = new Color(0, 0, 0, 0.1),
+                BackgroundColor = Color.FromHex("#3f4648")
             };
 
-            label.SetBinding(Label.TextProperty, "display_name");
+            label.SetBinding(Label.TextProperty, "nameAndAge");
 
             frame.Margin = new Thickness(10, 0, 10, 0);
             label.Margin = new Thickness(10, 0, 10, 0);

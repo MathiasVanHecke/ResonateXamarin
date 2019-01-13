@@ -20,7 +20,7 @@ namespace ResonateXamarin.ViewModels
         {
             Items = items;
 
-            ItemSwiped = new Command(v =>
+            ItemSwiped = new Command(async v =>
             {
                 foreach (PropertyDescriptor descriptor in TypeDescriptor.GetProperties(v))
                 {
@@ -40,6 +40,7 @@ namespace ResonateXamarin.ViewModels
                             else
                             {
                                 //Like
+                                await ResonateManager.AddMatch(Items[CurrentIndex]);
                                 Items.RemoveAt(CurrentIndex.ToCyclingIndex(Items.Count));
                             }
                         }
