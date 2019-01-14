@@ -58,7 +58,7 @@
                         <Button x:Name="btnRegister" Text="Register" TextColor="#FFFFFF" FontSize="Medium" BackgroundColor="#1DB954" Clicked="Handle_Clicked" BorderRadius="25" Margin="40"/>
                     </StackLayout>
                 </StackLayout>
-            </StackLayout>
+               </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

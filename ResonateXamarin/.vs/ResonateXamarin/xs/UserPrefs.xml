@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{102C84CF-D84E-4010-A88C-04476D642F83}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ResonateXamarin/Views/Discover/DiscoverPeopleByArtistPage.xaml.cs">
+    <Files>
+      <File FileName="ResonateXamarin/Views/Discover/DiscoverPeopleByArtistPage.xaml" Line="47" Column="1" />
+      <File FileName="ResonateXamarin/Views/Discover/DiscoverPeopleByArtistPage.xaml.cs" Line="41" Column="65" />
+      <File FileName="ResonateXamarin/Views/RegisterPage.xaml.cs" Line="71" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin/Models/ResonateManager.cs" relfile="ResonateXamarin/Models/ResonateManager.cs" line="123" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Nexus_5X_API_28_x86" />
+  <MonoDevelop.Ide.ItemProperties.ResonateXamarin.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.b1a5c594" />
 </Properties>

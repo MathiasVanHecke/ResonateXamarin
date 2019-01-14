@@ -12,17 +12,14 @@ namespace ResonateXamarin.Views.Swipe
     public class SwipePage : ContentPage
     {
        
-        public SwipePage(ObservableCollection<SpotifyUser> items)
+        public SwipePage(ObservableCollection<SpotifyUser> items, String value)
         {
-            //methode = Artist, Genre, Location
-            //Value = waarde van methode
-
-
             var cardsView = new CardsView
             {
                 ItemTemplate = new DataTemplate(() => new DefaultSwipeCardItemView()),
             };
 
+            Title = $"Discover based on {value}";
 
             //Niet cyclen
             cardsView.IsCyclical = true;
@@ -34,21 +31,20 @@ namespace ResonateXamarin.Views.Swipe
 
             cardsView.SetBinding(CardsView.ItemSwipedCommandProperty, nameof(SwipePageViewModel.ItemSwiped));
 
-            //Layout van swipe pagina
-            Label title = new Label
-            {
-                Text = $"Ontdek alle mensen die van: DYNAMISCH houden.",
-                FontSize = 34,
-                TextColor = Color.FromHex("#63d297")
-            };
+            ////Layout van swipe pagina
+            //Label title = new Label
+            //{
+            //    Text = $"Ontdek alle mensen die van: {value} houden.",
+            //    FontSize = 34,
+            //    TextColor = Color.FromHex("#63d297")
+            //};
 
-            title.Margin = new Thickness(10, 20, 10, 30);
+            //title.Margin = new Thickness(10, 20, 10, 30);
 
             Content = new StackLayout()
             {
                 Children =
                 {
-                    title,
                     cardsView
                 }
             };
@@ -58,10 +54,10 @@ namespace ResonateXamarin.Views.Swipe
             BindingContext = new SwipePageViewModel(items);
         }
 
-        async public static Task<SwipePage> BuildSwipePageAsnyc()
+        async public static Task<SwipePage> BuildSwipePageAsnyc(int methode, String value)
         {
-            ObservableCollection<SpotifyUser> tmpData = await ResonateManager.GetPotMatches("koen.vanhecke", 1, "arctic monkeys");
-            return new SwipePage(tmpData);
+            ObservableCollection<SpotifyUser> tmpData = await ResonateManager.GetPotMatches(methode, value);
+            return new SwipePage(tmpData, value);
         }
     }
 }

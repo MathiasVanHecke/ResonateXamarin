@@ -12,7 +12,25 @@ namespace ResonateXamarin
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            try
+            {
+                var currentuserID = (Application.Current.Properties["user_id"].ToString());
+                if (currentuserID != string.Empty)
+                    MainPage = new NavigationPage(new DiscoverPeopleByArtistPage())
+                    {
+                        BarBackgroundColor = Color.FromHex("#222729"),
+                        BarTextColor = Color.White
+                    };
+            }
+            catch
+            {
+                Application.Current.Properties["user_id"] = "";
+                Application.Current.Properties["bearer"] = "";
+                Application.Current.SavePropertiesAsync();
+                MainPage = new LoginPage();
+            }
+
+            //MainPage = new LoginPage();
         }
 
         protected override void OnStart()

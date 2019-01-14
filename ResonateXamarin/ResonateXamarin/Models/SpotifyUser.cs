@@ -11,7 +11,7 @@ namespace ResonateXamarin.Models
         public string href { get; set; }
         public string id { get; set; }
         public string birthdate { get; set; }
-
+        public string beschrijving { get; set; }
         public string urlPf { get; set; }
 
         private string _nameAndAge;

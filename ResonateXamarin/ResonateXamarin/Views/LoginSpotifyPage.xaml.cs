@@ -22,7 +22,8 @@ namespace ResonateXamarin.Views
                 string url = e.Url;
                 string helper = url.Split('=')[1];
                 string token = helper.Split('&')[0];
-                GlobalVariables.UserBearer = token;
+                Application.Current.Properties["bearer"] = token;
+                Application.Current.SavePropertiesAsync();
                 Application.Current.MainPage = new RegisterPage();
             }
         }

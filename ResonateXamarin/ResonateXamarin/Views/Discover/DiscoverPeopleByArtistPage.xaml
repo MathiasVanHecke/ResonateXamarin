@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResonateXamarin.Views.DiscoverPeopleByArtistPage">
     <ContentPage.Content>
+<!--        <ContentPage.ToolbarItems>
+            <ToolbarItem Name="MenuItem1" Order="Primary" Text="Item 1" Priority="0" />
+            <ToolbarItem Name="MenuItem2" Order="Primary" Text="Item 2" Priority="1" />
+        </ContentPage.ToolbarItems>-->
         <ScrollView>
             <StackLayout Spacing="10" x:Name="layout" Padding="20" BackgroundColor="#222729">
                 <!--Title-->
                 <Label Text="Discover People by" VerticalOptions="Start" TextColor="#63d297" FontSize="34" HorizontalOptions="FillAndExpand" />
                 
-                <Label Text="Artists" VerticalOptions="Start" TextColor="#63d297" FontSize="25" HorizontalOptions="FillAndExpand" FontAttributes="Bold" />
+                <Label Text="Artists" VerticalOptions="Start" TextColor="#63d297" FontSize="25" HorizontalOptions="FillAndExpand"/>
                 
                 <StackLayout>
                         <Grid x:Name="gArtists" ColumnSpacing="10" RowSpacing="0">
@@ -21,10 +25,21 @@
                             </Grid.RowDefinitions>
                             
                         </Grid>
-                       
-                    </StackLayout>
+                       <!--Code generatie in class file-->
+                </StackLayout>
                 
-               
+                <Label Text="Genres" VerticalOptions="Start" TextColor="#63d297" FontSize="25" HorizontalOptions="FillAndExpand"/>
+                <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                    <StackLayout>
+                        <Grid x:Name="gGenres" ColumnSpacing="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

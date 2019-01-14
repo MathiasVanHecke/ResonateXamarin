@@ -11,13 +11,17 @@ namespace ResonateXamarin.Views
         {
             InitializeComponent();
             imgBackground.Source = ImageSource.FromResource("ResonateXamarin.Assets.loginbg.jpeg");
+            CheckIfLoggedIn();
+        }
+
+        private void CheckIfLoggedIn()
+        {
+
         }
 
         void btnLoginOn_Clicked(object sender, System.EventArgs e)
         {
             Application.Current.MainPage = new LoginSpotifyPage();
-
-            //Application.Current.MainPage = new RegisterPage();
         }
     }
 }

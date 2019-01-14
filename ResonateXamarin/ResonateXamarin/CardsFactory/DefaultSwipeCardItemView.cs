@@ -8,16 +8,10 @@ namespace ResonateXamarin.CardsFactory
     {
         public DefaultSwipeCardItemView()
         {
-            var tapGesture = new TapGestureRecognizer();
-            tapGesture.Tapped += async (s, e) => await Navigation.PushAsync(new ProfileSwipePage());
-            //profiel id meegeven aan volgende applicatie
-
-            GestureRecognizers.Add(tapGesture);
-
             var frame = new Frame
             {
                 Padding = 0,
-                HasShadow = false,
+                HasShadow = false, 
                 IsClippedToBounds = false,
                 BorderColor = Color.Silver,
             };
@@ -44,6 +38,14 @@ namespace ResonateXamarin.CardsFactory
             };
 
             image.SetBinding(Image.SourceProperty, "urlPf");
+
+
+            //TODO Smerige oplossing..
+
+            var tapGesture = new TapGestureRecognizer();
+            tapGesture.Tapped += async (s, e) => await Navigation.PushAsync(new ProfileSwipePage("ariane.malfait"));
+
+            GestureRecognizers.Add(tapGesture);
 
             frame.Content = image;
         }

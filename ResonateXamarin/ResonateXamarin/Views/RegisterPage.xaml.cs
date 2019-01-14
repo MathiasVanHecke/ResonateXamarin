@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using ResonateXamarin.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -115,8 +116,11 @@ namespace ResonateXamarin.Views
             spotifyUser.email = entEmail.Text;
             spotifyUser.birthdate = entDob.Text;
 
+            //Zet user id in local storage
+            Application.Current.Properties["user_id"] = spotifyUser.id;
+            await Application.Current.SavePropertiesAsync();
             //Boolean succes = await ResonateManager.RegisterUser(spotifyUser);
- 
+
             Application.Current.MainPage = new DiscoverPeopleByArtistPage();
 
         }
