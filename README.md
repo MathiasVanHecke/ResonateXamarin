@@ -2,6 +2,8 @@
 ## Inleiding
 Dit is de applicatie die geschreven is in Xamarin. Men kan dit uitvoeren op een Android toestel die minimaal een api level heeft van 28.
 
+> Deze applicatie zal niet werken wanneer er geen Resonate Api aanwezig is.
+
 ## Opstart process
 Om het project te starten moeten we enkele dingen uitvoeren om het project goed te krijgen.
 
@@ -13,7 +15,8 @@ Zorg ervoor dat volgende programma's geïnstalleerd zijn:
 - Een Android emulator of fysiek toestel met api level 28
 
 ### Opstarten
-Nadat men het project lokaal heeft opgeslagen, zou men instaat moeten zijn het zonder problemen op te starten.
+- In het bestand: ResonateManger verander de resonate url naar waar uw eigen api is.
+- Nadat men het project lokaal heeft opgeslagen, zou men instaat moeten zijn het zonder problemen op te starten.
 
 ### Flow van het project & duiding
 Dit is de flow die de gebruiker moet volgen als ze de applicatie gebruiken.
