@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae6135d0-8dfd-4455-bb86-3fb9e738c66e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ResonateXamarin/Views/LoginPage.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <marker date="1545215552647" expanded="true" signature="39:832" ph="&lt;&lt;ContentPage.Content&gt;&#10;        &lt;Grid&gt;&#10;            &lt;Image x:Name=&quot;imgBackground&quot; Aspect=&quot;AspectFill&quot;/&gt;&#10;            &lt;Label Text=&quot;Login to find new people to connected with.&quot; TextColor=&quot;##FFFFFF&quot; FontAttributes=&quot;Bold&quot; HorizontalOptions=&quot;Center&quot; FontSize=&quot;32&quot; Margin=&quot;20,40,20,0&quot;/&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; VerticalOptions=&quot;End&quot; Margin=&quot;20,20,20,30&quot;&gt;&#10;                &lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/Grid&gt;&#10;    &lt;/ContentPage.Content&gt;.../&gt;" />
+                <marker date="1545215552647" expanded="true" signature="200:817" ph="&lt;&lt;Grid&gt;&#10;            &lt;Image x:Name=&quot;imgBackground&quot; Aspect=&quot;AspectFill&quot;/&gt;&#10;            &lt;Label Text=&quot;Login to find new people to connected with.&quot; TextColor=&quot;##FFFFFF&quot; FontAttributes=&quot;Bold&quot; HorizontalOptions=&quot;Center&quot; FontSize=&quot;32&quot; Margin=&quot;20,40,20,0&quot;/&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; VerticalOptions=&quot;End&quot; Margin=&quot;20,20,20,30&quot;&gt;&#10;                &lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/Grid&gt;.../&gt;" />
+                <marker date="1545215552647" expanded="true" signature="230:790" ph="&lt;&lt;Image x:Name=&quot;imgBackground&quot; Aspect=&quot;AspectFill&quot;/&gt; &lt;Label Text=&quot;Login to find new people to connected with.&quot; TextColor=&quot;##FFFFFF&quot; FontAttributes=&quot;Bold&quot; HorizontalOptions=&quot;Center&quot; FontSize=&quot;32&quot; Margin=&quot;20,40,20,0&quot;/&gt; &lt;StackLayout Orientation=&quot;Vertical&quot; VerticalOptions=&quot;End&quot; Margin=&quot;20,20,20,30&quot;&gt;&#10;                &lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;&#10;            &lt;/StackLayout&gt;.../&gt;" />
+                <marker date="1545215552647" expanded="true" signature="488:774" ph="&lt;&lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ResonateXamarin/ViewModels/SwipePageViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="688">
+              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+              <folding>
+                <marker date="1547456966540" expanded="false" signature="6:238" ph="..." />
+                <marker date="1547456966540" expanded="true" signature="276:2140" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="339:2138" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="523:1754" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="609:1742" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="714:1728" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="942:1710" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="1013:1688" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="1099:1355" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="1162:1235" ph="/* Dislike ... */" />
+                <marker date="1547456966540" expanded="true" signature="1388:1662" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="1832:2068" ph="{...}" />
+                <marker date="1547456966540" expanded="true" signature="1892:2058" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ResonateXamarin/Models/Artist.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding>
+                <marker date="1547051766791" expanded="true" signature="46:308" ph="{...}" />
+                <marker date="1547051766791" expanded="true" signature="72:306" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ResonateXamarin/Models/ResonateManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+              <folding>
+                <marker date="1547476373271" expanded="false" signature="6:258" ph="..." />
+                <marker date="1547476373271" expanded="true" signature="292:6427" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="334:6425" ph="{...}" />
+                <marker date="1547476373271" expanded="false" signature="349:2015" ph="Spotify Api" />
+                <marker date="1547476373271" expanded="true" signature="436:1158" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="503:1148" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="599:1031" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="1068:1134" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="1231:1996" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="1298:1986" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="1437:1869" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="1906:1972" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="2025:6419" ph="Resonate Api" />
+                <marker date="1547476373271" expanded="false" signature="2055:3499" ph="User" />
+                <marker date="1547476373271" expanded="true" signature="2140:2861" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="2207:2851" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="2320:2734" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="2771:2837" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="2931:3478" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="2998:3468" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="3121:3351" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="3388:3454" ph="{...}" />
+                <marker date="1547476373271" expanded="false" signature="3509:4710" ph="Genre en Artiesten" />
+                <marker date="1547476373271" expanded="true" signature="3594:4134" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="3661:4124" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="3775:4007" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="4044:4110" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="4194:4691" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="4261:4681" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="4376:4564" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="4601:4667" ph="{...}" />
+                <marker date="1547476373271" expanded="false" signature="4720:6399" ph="Matches" />
+                <marker date="1547476373271" expanded="true" signature="4846:5473" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="4913:5463" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="5116:5346" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="5383:5449" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="5544:6380" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="5611:6370" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="5812:6253" ph="{...}" />
+                <marker date="1547476373271" expanded="true" signature="6290:6356" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ResonateXamarin/Models/Artist.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResonateXamarin/Views/LoginPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResonateXamarin/Models/ResonateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResonateXamarin/ViewModels/SwipePageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="ResonateXamarin.Android/invalid/Android Facet - ResonateXamarin.Android" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="20" />
+    <option name="y" value="43" />
+    <option name="width" value="1400" />
+    <option name="height" value="785" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ResonateXamarin" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae6135d0-8dfd-4455-bb86-3fb9e738c66e" name="Default Changelist" comment="" />
+      <created>1547507038862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547507038862</updated>
+      <workItem from="1547507040890" duration="172000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="172000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="20" y="43" width="1400" height="785" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ResonateXamarin/Views/LoginPage.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1545215552647" expanded="true" signature="39:832" ph="&lt;&lt;ContentPage.Content&gt;&#10;        &lt;Grid&gt;&#10;            &lt;Image x:Name=&quot;imgBackground&quot; Aspect=&quot;AspectFill&quot;/&gt;&#10;            &lt;Label Text=&quot;Login to find new people to connected with.&quot; TextColor=&quot;##FFFFFF&quot; FontAttributes=&quot;Bold&quot; HorizontalOptions=&quot;Center&quot; FontSize=&quot;32&quot; Margin=&quot;20,40,20,0&quot;/&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; VerticalOptions=&quot;End&quot; Margin=&quot;20,20,20,30&quot;&gt;&#10;                &lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/Grid&gt;&#10;    &lt;/ContentPage.Content&gt;.../&gt;" />
+            <marker date="1545215552647" expanded="true" signature="200:817" ph="&lt;&lt;Grid&gt;&#10;            &lt;Image x:Name=&quot;imgBackground&quot; Aspect=&quot;AspectFill&quot;/&gt;&#10;            &lt;Label Text=&quot;Login to find new people to connected with.&quot; TextColor=&quot;##FFFFFF&quot; FontAttributes=&quot;Bold&quot; HorizontalOptions=&quot;Center&quot; FontSize=&quot;32&quot; Margin=&quot;20,40,20,0&quot;/&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; VerticalOptions=&quot;End&quot; Margin=&quot;20,20,20,30&quot;&gt;&#10;                &lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/Grid&gt;.../&gt;" />
+            <marker date="1545215552647" expanded="true" signature="230:790" ph="&lt;&lt;Image x:Name=&quot;imgBackground&quot; Aspect=&quot;AspectFill&quot;/&gt; &lt;Label Text=&quot;Login to find new people to connected with.&quot; TextColor=&quot;##FFFFFF&quot; FontAttributes=&quot;Bold&quot; HorizontalOptions=&quot;Center&quot; FontSize=&quot;32&quot; Margin=&quot;20,40,20,0&quot;/&gt; &lt;StackLayout Orientation=&quot;Vertical&quot; VerticalOptions=&quot;End&quot; Margin=&quot;20,20,20,30&quot;&gt;&#10;                &lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;&#10;            &lt;/StackLayout&gt;.../&gt;" />
+            <marker date="1545215552647" expanded="true" signature="488:774" ph="&lt;&lt;Button x:Name=&quot;btnLogin&quot; Text=&quot;LOGIN WITH SPOTIFY&quot; TextColor=&quot;##FFFFFF&quot; FontSize=&quot;Large&quot; BackgroundColor=&quot;##1DB954&quot; Clicked=&quot;btnLoginOn_Clicked&quot; BorderRadius=&quot;25&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResonateXamarin/ViewModels/SwipePageViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding>
+            <marker date="1547456966540" expanded="false" signature="6:238" ph="..." />
+            <marker date="1547456966540" expanded="true" signature="276:2140" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="339:2138" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="523:1754" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="609:1742" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="714:1728" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="942:1710" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="1013:1688" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="1099:1355" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="1162:1235" ph="/* Dislike ... */" />
+            <marker date="1547456966540" expanded="true" signature="1388:1662" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="1832:2068" ph="{...}" />
+            <marker date="1547456966540" expanded="true" signature="1892:2058" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResonateXamarin/Models/Artist.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <marker date="1547051766791" expanded="true" signature="46:308" ph="{...}" />
+            <marker date="1547051766791" expanded="true" signature="72:306" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ResonateXamarin/Models/ResonateManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <marker date="1547476373271" expanded="false" signature="6:258" ph="..." />
+            <marker date="1547476373271" expanded="true" signature="292:6427" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="334:6425" ph="{...}" />
+            <marker date="1547476373271" expanded="false" signature="349:2015" ph="Spotify Api" />
+            <marker date="1547476373271" expanded="true" signature="436:1158" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="503:1148" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="599:1031" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="1068:1134" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="1231:1996" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="1298:1986" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="1437:1869" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="1906:1972" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="2025:6419" ph="Resonate Api" />
+            <marker date="1547476373271" expanded="false" signature="2055:3499" ph="User" />
+            <marker date="1547476373271" expanded="true" signature="2140:2861" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="2207:2851" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="2320:2734" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="2771:2837" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="2931:3478" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="2998:3468" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="3121:3351" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="3388:3454" ph="{...}" />
+            <marker date="1547476373271" expanded="false" signature="3509:4710" ph="Genre en Artiesten" />
+            <marker date="1547476373271" expanded="true" signature="3594:4134" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="3661:4124" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="3775:4007" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="4044:4110" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="4194:4691" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="4261:4681" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="4376:4564" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="4601:4667" ph="{...}" />
+            <marker date="1547476373271" expanded="false" signature="4720:6399" ph="Matches" />
+            <marker date="1547476373271" expanded="true" signature="4846:5473" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="4913:5463" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="5116:5346" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="5383:5449" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="5544:6380" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="5611:6370" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="5812:6253" ph="{...}" />
+            <marker date="1547476373271" expanded="true" signature="6290:6356" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

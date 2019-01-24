@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Android/sdk/platforms/android-27/data/res" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Android/sdk/sources/android-27" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_ResonateXamarin.-1509476632.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ResonateXamarin" t="IncludeRecursive">
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="Assets" t="Include">
+          <e p="Close.png" t="Include" />
+          <e p="loginbg.jpeg" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CardsFactory" t="Include">
+          <e p="DefaultSwipeCardItemView.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Artist.cs" t="Include" />
+          <e p="Genre.cs" t="Include" />
+          <e p="ResonateManager.cs" t="Include" />
+          <e p="SpotifyData.cs" t="Include" />
+          <e p="SpotifyUser.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="ResonateXamarin.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ResonateXamarin.csproj" t="IncludeRecursive" />
+        <e p="ViewModels" t="Include">
+          <e p="SwipePageViewModel.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="Discover" t="Include">
+            <e p="DiscoverPeopleByArtistPage.xaml" t="Include" />
+            <e p="DiscoverPeopleByArtistPage.xaml.cs" t="Include" />
+          </e>
+          <e p="LoginPage.xaml" t="Include" />
+          <e p="LoginPage.xaml.cs" t="Include" />
+          <e p="LoginSpotifyPage.xaml" t="Include" />
+          <e p="LoginSpotifyPage.xaml.cs" t="Include" />
+          <e p="RegisterPage.xaml" t="Include" />
+          <e p="RegisterPage.xaml.cs" t="Include" />
+          <e p="Swipe" t="Include">
+            <e p="ProfileSwipePage.xaml" t="Include" />
+            <e p="ProfileSwipePage.xaml.cs" t="Include" />
+            <e p="SwipePage.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="ResonateXamarin.Android" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="ResonateXamarin.Android.csproj" t="IncludeRecursive" />
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include" />
+          <e p="drawable-hdpi" t="Include" />
+          <e p="drawable-xhdpi" t="Include" />
+          <e p="drawable-xxhdpi" t="Include" />
+          <e p="drawable-xxxhdpi" t="Include" />
+          <e p="layout" t="Include">
+            <e p="Tabbar.axml" t="Include" />
+            <e p="Toolbar.axml" t="Include" />
+          </e>
+          <e p="mipmap-anydpi-v26" t="Include">
+            <e p="icon.xml" t="Include" />
+            <e p="icon_round.xml" t="Include" />
+          </e>
+          <e p="mipmap-hdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-mdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="Resource.designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="colors.xml" t="Include" />
+            <e p="styles.xml" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="ResonateXamarin.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

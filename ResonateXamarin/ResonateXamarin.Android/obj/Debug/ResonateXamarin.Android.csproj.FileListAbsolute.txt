@@ -34,17 +34,11 @@
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/R.cs.flag
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/R.txt
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/uploadflags.txt
-/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/bin/Debug/Mono.Android.pdb
-/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/bin/Debug/Newtonsoft.Json.pdb
-/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/bin/Debug/Xamarin.Forms.Core.pdb
-/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/ResonateXamarin.Android.pdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/Mono.Android.pdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/Newtonsoft.Json.pdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/ResonateXamarin.pdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/Xamarin.Forms.Core.pdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/Xamarin.Forms.Xaml.pdb
-/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/bin/Debug/FormsViewGroup.dll.mdb
-/Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/FormsViewGroup.dll.mdb
 /Users/mathias/Projects/ResonateXamarin/ResonateXamarin/ResonateXamarin.Android/obj/Debug/linksrc/Xamarin.Forms.Platform.Android.dll.mdb

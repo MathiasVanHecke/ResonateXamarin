@@ -27,11 +27,11 @@ namespace ResonateXamarin.Views
 
             List<Artist> artists = await ResonateManager.GetArists();
 
-            foreach (Artist artist in artists)
+            for (int i = 0; (i <= 2) && (i <= artists.Count); i++)
             {
                 Image image = new Image
                 {
-                    Source = artist.UrlPf,
+                    Source = artists[i].UrlPf,
                     Aspect = Aspect.AspectFill,
                 };
 
@@ -40,28 +40,26 @@ namespace ResonateXamarin.Views
 
                 tapGestureRecognizer.Tapped += async (sender, e) =>
                 {
-                    await Navigation.PushAsync(await SwipePage.BuildSwipePageAsnyc(1, artist.ArtistName));
+                    await Navigation.PushAsync(await SwipePage.BuildSwipePageAsnyc(1, artists[i].ArtistName));
                 };
 
                 gArtists.Children.Add(image, column, index);
 
+                index++;
+
                 gArtists.Children.Add(new Label
                 {
-                    Text = artist.ArtistName,
+                    Text = artists[i].ArtistName,
                     VerticalTextAlignment = TextAlignment.Center,
                     HorizontalTextAlignment = TextAlignment.Center,
                     BackgroundColor = Color.FromHex("#3f4648"),
                     TextColor = Color.FromHex("#FFFFFF"),
                     FontSize = 18
                 }, column, index);
+
                 column++;
 
-                if (column == 2)
-                    column = 0;
-                else
-                {
-                    index++;
-                }
+                index = 0;
             }
         }
 

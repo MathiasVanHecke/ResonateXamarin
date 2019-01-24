@@ -11,7 +11,7 @@ namespace ResonateXamarin.CardsFactory
             var frame = new Frame
             {
                 Padding = 0,
-                HasShadow = false, 
+                HasShadow = false,
                 IsClippedToBounds = false,
                 BorderColor = Color.Silver,
             };
@@ -43,7 +43,7 @@ namespace ResonateXamarin.CardsFactory
             //TODO Smerige oplossing..
 
             var tapGesture = new TapGestureRecognizer();
-            tapGesture.Tapped += async (s, e) => await Navigation.PushAsync(new ProfileSwipePage("ariane.malfait"));
+            tapGesture.Tapped += async (s, e) => await Navigation.PushAsync(new ProfileSwipePage("ariane.malfait"), false);
 
             GestureRecognizers.Add(tapGesture);
 
